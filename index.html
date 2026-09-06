@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Invaders v1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game">
+
+        <div id="hud">
+            <div>Score: <span id="score">0</span></div>
+            <div>Wave: <span id="wave">1</span></div>
+            <div>Lives: <span id="lives">3</span></div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="menu">
+            <h1>GALAXY INVADERS</h1>
+            <p>Destroy the alien fleet!</p>
+
+            <button id="startButton">START GAME</button>
+
+            <div class="controls">
+                <p>⬅️ ➡️ / A D — Move</p>
+                <p>SPACE — Shoot</p>
+            </div>
+        </div>
+
+        <div id="gameOver">
+            <h1>GAME OVER</h1>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartButton">PLAY AGAIN</button>
+        </div>
+
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
